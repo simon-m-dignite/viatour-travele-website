@@ -36,18 +36,22 @@ const HeaderSection = () => {
       </div>
       <div className="w-full grid grid-cols-1 md:grid-cols-12 lg:grid-cols-12 md:grid-rows-2 gap-x-2">
         <div className="row-span-2 col-span-7">
-          <img src={TourDetailsImage1} alt="" />
+          <img src={TourDetailsImage1} alt="" className="rounded-lg" />
         </div>
         <div className="row-span-2 col-span-5 flex flex-col gap-y-2">
-          <div className="row-span-1 col-span-5">
-            <img src={TourDetailsImage2} alt="" />
+          <div className="w-full row-span-1 col-span-5">
+            <img
+              src={TourDetailsImage2}
+              alt=""
+              className="rounded-lg mt-2 md:mt-0"
+            />
           </div>
           <div className="row-span-1 col-span-5 flex gap-2">
             <div className="row-span-1 col-span-2">
-              <img src={TourDetailsImage3} alt="" className="" />
+              <img src={TourDetailsImage3} alt="" className="rounded-lg" />
             </div>
             <div className="row-span-1 col-span-2">
-              <img src={TourDetailsImage4} alt="" className="" />
+              <img src={TourDetailsImage4} alt="" className="rounded-lg" />
             </div>
           </div>
         </div>

@@ -4,7 +4,7 @@ import { styles } from "../../styles/styles";
 
 const TourBookingCard = () => {
   return (
-    <div className="col-span-4 md:col-span-4 shadow-lg rounded-xl flex flex-col gap-6 px-2 md:p-6 py-4  md:h-[42rem] lg:h-[35rem]">
+    <div className="col-span-4 md:col-span-4 box_shadow rounded-xl flex flex-col gap-6 px-4 md:p-6 py-4  md:h-[42rem] lg:h-[35rem] mt-8 md:mt-0">
       <p className="text-base">
         From <span className="font-medium">$1,400</span>
       </p>
@@ -49,7 +49,7 @@ const TourBookingCard = () => {
       <p className="text-base font-medium">Add Extra</p>
       <div className="flex justify-between items-center">
         <div className="flex items-center gap-2">
-          <input type="checkbox" name="" id="" />
+          <input type="checkbox" name="" id="" className="accent-[#EB662B]" />
           <label htmlFor="" className="text-sm">
             Add Service per booking
           </label>
@@ -58,7 +58,7 @@ const TourBookingCard = () => {
       </div>
       <div className="flex justify-between items-center">
         <div className="flex items-center gap-2">
-          <input type="checkbox" name="" id="" />
+          <input type="checkbox" name="" id="" className="accent-[#EB662B]" />
           <label htmlFor="" className="text-sm">
             Add Service per person
           </label>

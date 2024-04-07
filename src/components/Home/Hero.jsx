@@ -1,11 +1,12 @@
 import React from "react";
-import { HeroImage, Main } from "../../assets/export";
+import { HeroImage } from "../../assets/export";
 // import Main from "../../assets/export";
 import Button from "../global//Button";
+import { styles } from "../../styles/styles";
 
 const Hero = () => {
   return (
-    <div className={`w-full h-screen relative px-2 md:px-8 lg:px-16`}>
+    <div className={`w-full h-screen relative ${styles.horizontalPadding}`}>
       <img src={HeroImage} alt="" className="w-full h-full rounded-2xl" />
       <div className="w-full absolute px-4 md:px-28 text-center center-div flex flex-col items-center gap-y-3">
         <div className="flex flex-col md:gap-y-6 lg:gap-y-10">

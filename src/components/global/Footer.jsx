@@ -64,19 +64,19 @@ const Footer = () => {
   ];
   return (
     <div
-      className={`py-16 ${styles.horizontalPadding} flex flex-col gap-y-12 relative min-h-96`}
+      className={`pt-16 pb-6 ${styles.horizontalPadding} flex flex-col gap-y-6 relative min-h-96`}
     >
-      <div className="w-full bg-pink-200 h-full min-h-96 py-12 rounded-xl flex flex-col gap-y-8 px-2 md:px-8 lg:px-16">
+      <div className="w-full bg-pink-200 h-full min-h-96 py-12 rounded-xl flex flex-col gap-y-8 px-4 md:px-8 lg:px-16">
         <div className="w-full flex flex-col gap-y-4 md:gap-y-0 md:flex-row my-3 md:my-0 justify-between items-center">
           <p className="text-lg font-medium text-[05073C]">
             Speak to our expert at{" "}
             <span className="text-[#EB662B]">1-800-453-6744</span>
           </p>
-          <div className="w-full md:w-1/5 text-start md:text-end flex flex-col">
-            {/* <p className="text-base text-start md:text-center text-[05073C] font-medium">
+          <div className="w-full md:w-1/5 text-start gap-y-4 md:text-end flex flex-col">
+            <p className="text-base text-start md:text-center text-[05073C] font-medium">
               Follow Us
-            </p> */}
-            <div className="flex items-center justify-center gap-x-5">
+            </p>
+            <div className="flex items-center justify-start md:justify-center gap-x-5">
               <FaFacebookF className="w-4 h-4 cursor-pointer" />
               <FaLinkedinIn className="w-4 h-4 cursor-pointer" />
               <FaInstagram className="w-4 h-4 cursor-pointer" />

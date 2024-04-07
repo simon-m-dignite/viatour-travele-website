@@ -2,8 +2,7 @@ import React, { useRef, useState } from "react";
 import { styles } from "../../styles/styles";
 import { Logo } from "../../assets/export";
 import NavLink from "./NavLink";
-import { Link, useNavigate } from "react-router-dom";
-import Button from "./Button";
+import { Link } from "react-router-dom";
 import { TbMenuDeep } from "react-icons/tb";
 import LoginPopup from "./LoginPopup";
 import SignUpPopup from "./SignUpPopup";
@@ -17,10 +16,7 @@ const Navbar = () => {
       setOpen(false);
     }
   };
-  const navigate = useNavigate();
-  const handleNavigate = () => {
-    navigate("/popup");
-  };
+
   return (
     <div
       className={`w-full h-20 ${styles.horizontalPadding} flex justify-between items-center py-2`}
@@ -37,14 +33,6 @@ const Navbar = () => {
         <NavLink path={"/"} title={"Home"} />
         <NavLink path={"/tours"} title={"Find Tours"} />
         <SignUpPopup />
-        {/* <NavLink path={"/"} title={"Sign up"} /> */}
-        {/* <Button
-          title={"Login"}
-          onclick={handleNavigate}
-          classes={
-            "tex-sm font-normal text-white h-[44px] w-[83px] rounded-lg bg-[#EB662B]"
-          }
-        /> */}
         <LoginPopup />
       </div>
       <div
@@ -55,16 +43,24 @@ const Navbar = () => {
       >
         <div
           ref={sidebarRef}
-          className=" flex flex-col justify-start gap-3  items-start p-6 w-1/2 h-[calc(100vh)] shadow-md z-50 bg-white"
+          className=" flex flex-col justify-start gap-y-6 items-start px-4 pt-6 w-1/2 h-[calc(100vh)] shadow-md z-50 bg-white"
         >
-          <NavLink path={"/"} title={"Home"} setOpen={setOpen} />
-          <NavLink path={"/"} title={"Activities"} setOpen={setOpen} />
-          <NavLink path={"/"} title={"Sign up"} setOpen={setOpen} />
+          <div>
+            <img src={Logo} alt="" className="w-3/5" />
+          </div>
+          <div className="flex flex-col gap-y-3">
+            <NavLink path={"/"} title={"Home"} setOpen={setOpen} />
+            <NavLink path={"/tours"} title={"Find Tours"} setOpen={setOpen} />
+            <SignUpPopup />
+          </div>
         </div>
       </div>
-      <button onClick={() => setOpen(true)} className="md:hidden">
-        <TbMenuDeep className="text-2xl md:hidden" />
-      </button>
+      <div className="flex items-center gap-x-3 md:hidden">
+        <LoginPopup />
+        <button onClick={() => setOpen(true)} className="md:hidden">
+          <TbMenuDeep className="text-2xl md:hidden" />
+        </button>
+      </div>
     </div>
   );
 };

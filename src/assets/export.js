@@ -1,5 +1,5 @@
 import Logo from "./logo.png";
-import HeroImage from "./hero-bg.png";
+import HeroImage from "./hero-bg-hero.png";
 import Main from "./main.png";
 import Tour1 from "./tour1.png";
 import Tour2 from "./tour2.png";

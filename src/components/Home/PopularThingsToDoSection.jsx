@@ -20,25 +20,36 @@ const PopularThingsToDoSection = () => {
           See All
         </Link>
       </div>
-      <div className="w-full py-4 row grid-cols-1 md:grid-cols-7 lg:grid-cols-7 xl:gird-cols-7 grid-rows-2">
-        {/* <div className="col-span-1 row-span-1">
-          <img src={PopularThing1} alt="" />
+      <div className="w-full grid grid-cols-1 md:grid-cols-9 lg:grid-cols-9 xl:gird-cols-9 grid-rows-1 gap-4">
+        <div className="col-span-2 row-span-1 flex flex-col gap-4">
+          <img
+            src={PopularThing1}
+            alt=""
+            className="h-[225px] mx-auto md:mx-0"
+          />
+          <img
+            src={PopularThing2}
+            alt=""
+            className="h-[220px] mx-auto md:mx-0"
+          />
         </div>
-        <div className="col-span-1 row-span-1">
-          <img src={PopularThing2} alt="" />
-        </div>
+        {/* <div className="col-span-1 row-span-1"></div> */}
         <div className="col-span-3">
-          <img src={PopularThing3} alt="" />
+          <img src={PopularThing3} alt="" className="w-[390px] mx-auto" />
         </div>
-        <div>
-          <img src={PopularThing4} alt="" />
+        <div className="col-span-4 flex flex-col gap-4">
+          <div className="col-span-4 row-span-1">
+            <img src={PopularThing4} alt="" className="w-full" />
+          </div>
+          <div className="row-span-1 col-span-4 flex justify-between gap-4">
+            <img src={PopularThing5} alt="" className="h-[215px] w-2/5" />
+            <img
+              src={PopularThing6}
+              alt=""
+              className="h-[215px] w-[195px] md:w-3/5"
+            />
+          </div>
         </div>
-        <div>
-          <img src={PopularThing5} alt="" />
-        </div>
-        <div>
-          <img src={PopularThing6} alt="" />
-        </div> */}
       </div>
     </div>
   );

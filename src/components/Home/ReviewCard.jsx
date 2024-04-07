@@ -1,6 +1,3 @@
-import React from "react";
-import { RewviewProfileImg } from "../../assets/export";
-
 const ReviewCard = ({ review }) => {
   return (
     <div className="width-11/12 mx-auto md:w-[630px] h-[405px] flex flex-col justify-center items-center gap-y-6">

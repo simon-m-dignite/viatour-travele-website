@@ -17,7 +17,7 @@ const CommentForm = () => {
         <input
           type="text"
           placeholder="Email*"
-          className="border rounded-xl p-3 text-sm outline-none"
+          className="border rounded-xl p-3 text-sm outline-none mt-2 md:mt-0"
         />
       </div>
       <div className="w-full">
@@ -37,7 +37,7 @@ const CommentForm = () => {
           placeholder="Comment*"
         ></textarea>
       </div>
-      <div>
+      <div className="">
         <button
           className={`text-sm font-medium ${styles.bgOrange} py-3 px-4 rounded-xl text-white`}
         >
