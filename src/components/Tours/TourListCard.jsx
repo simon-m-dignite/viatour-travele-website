@@ -10,7 +10,7 @@ const TourListCard = ({ tour }) => {
     navigate(`/tours/${tour?.title}`);
   };
   return (
-    <div className="w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 px-4 md:px-2 pt-3 md:pt-0 border md:p-3 rounded-xl gap-4">
+    <div className="w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 px-2 border md:p-3 rounded-xl gap-4">
       <img src={tour?.image} alt="tour image" className="mx-auto md:mx-0" />
       <div className="md:px-2 flex flex-col justify-center items-start gap-2">
         <p className="text-sm font-normal">{tour?.location}</p>
