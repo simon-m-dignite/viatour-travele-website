@@ -34,9 +34,9 @@ const HeaderSection = () => {
           <p className="text-sm font-normal">Whishlist</p>
         </div>
       </div>
-      <div className="w-full grid grid-cols-1 md:grid-cols-12 lg:grid-cols-12 md:grid-rows-2 gap-x-2">
-        <div className="row-span-2 col-span-7">
-          <img src={TourDetailsImage1} alt="" className="rounded-lg" />
+      <div className="w-full grid grid-cols-1 md:grid-cols-12 lg:grid-cols-12 md:grid-rows-2 gap-x-2 border">
+        <div className="row-span-2 col-span-7 border">
+          <img src={TourDetailsImage1} alt="" className="w-full rounded-lg" />
         </div>
         <div className="row-span-2 col-span-5 flex flex-col gap-y-2">
           <div className="w-full row-span-1 col-span-5">
